@@ -463,6 +463,10 @@ h6 {
   animation-delay: 0.9s;
 }
 
+.menu-card-delay-four {
+  animation-delay: 1.2s;
+}
+
 @keyframes loading-card {
   0% {
     opacity: 0;
