@@ -321,3 +321,34 @@ h6 {
   background-clip: text;
   -webkit-background-clip: text;
 }
+
+/* Footer */
+footer {
+  padding: 1.5rem;
+  row-gap: 0.5rem;
+}
+
+.logo-footer {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.suggestion-footer::before {
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  content: "\f2e7";
+  margin-right: 0.9rem;
+}
+
+.partner-footer::before {
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  content: "\f4c4";
+  margin-right: 0.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
