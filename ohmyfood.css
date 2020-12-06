@@ -448,7 +448,7 @@ h6 {
 }
 
 .menu-card-loader {
-  animation: loading-card 1500ms both 3500ms;
+  animation: loading-card 1500ms both;
 }
 
 .menu-card-delay-one {
