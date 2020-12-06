@@ -167,7 +167,69 @@ h6 {
 
 .presentation a:hover,
 .order:hover {
-  opacity: 0.85;
+  /* opacity: 0.85; */
   box-shadow: 0 1px 2px 0 rgba(60,64,67,0.5),0 1px 3px 1px rgba(60,64,67,0.4);
   transition: all 500ms ease-in-out;
+}
+
+/* Process */
+.process {
+  padding: 1rem;
+}
+.process ol {
+  list-style: none;
+  counter-reset: li;
+  row-gap: 1.5rem;
+  padding-left: 0;
+}
+
+.process ol li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 1px 3px 1px rgba(60,64,67,0.149);
+  cursor: pointer;
+  counter-increment: li;
+}
+
+.process ol li:hover{
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.5),0 1px 3px 1px rgba(60,64,67,0.4);
+  transition: all 500ms ease-in-out;
+}
+
+.process ol li:not(:last-child) {
+  background-color: #f5f5f5;
+}
+
+.process ol li::before {
+  content: counter(li);
+  background: #9356dc;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1.75rem;
+}
+
+.process ol li:last-child {
+  background-color: rgba(147, 86, 220, 0.15);
+}
+
+.process ol li:hover {
+  background-color: rgba(147, 86, 220, 0.15);
+}
+
+.process ol li:hover i {
+  color: #9356dc;
+}
+
+.process ol li i {
+  margin: 0 1.2rem;
 }
