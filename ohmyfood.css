@@ -83,6 +83,78 @@ h6 {
   background-color: #373737;
 }
 
+/* Loader Spinner */
+.loader-omf {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 999;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: hidden 3000ms forwards cubic-bezier(0.9, 0, 0.1, 1);
+}
+
+@keyframes hidden {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loader-steps {
+  width: 4.25rem;
+  height: 4.25rem;
+  background: #99e2d0;
+  border-radius: 50%;
+  position: relative;
+}
+
+.loader-steps img {
+  width: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.loader-steps::after,
+.loader-steps::before {
+  content: "";
+  display: block;
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 50%;
+}
+
+.loader-steps-process::after {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  border: 4px solid transparent;
+  border-top-color: #9356dc;
+  border-bottom-color: #9356dc;
+  transform: rotate(0deg) scale(1);
+  animation: loader 1200ms linear infinite;
+}
+
+@keyframes loader {
+  50% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
 /* Header */
 .header-area {
   grid-template-columns: 1fr;
@@ -376,7 +448,7 @@ h6 {
 }
 
 .menu-card-loader {
-  animation: loading-card 1500ms both;
+  animation: loading-card 1500ms both 3500ms;
 }
 
 .menu-card-delay-one {
