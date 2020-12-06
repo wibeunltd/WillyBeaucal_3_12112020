@@ -618,3 +618,63 @@ footer a {
   text-decoration: none;
   color: white;
 }
+/* Medias Queries */
+/* Tablette */
+@media (min-width: 575px) {
+  .process{
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+
+  .restaurant{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    column-gap: 2rem;
+  }
+
+  .menu-section {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .order{
+    margin: 1.75rem 9.75rem;
+  }
+
+  footer{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-footer{
+    grid-column: 1/-1;
+  }
+}
+
+/* Petit écran */
+@media (min-width: 768px) {
+  .restaurant{
+    padding: 2rem;
+  }
+
+  footer{
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+/* Grand écran */
+@media (min-width: 998px) {
+  .restaurant{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .process{
+    width: 60%;
+  }
+}
