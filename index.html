@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood! - Commande de repas en ligne</title>
-    <meta name="description"
-    content="Le concept Ohmyfood! : ne perdez plus de temps à consulter la carte. Composez votre propre menu et réduisez votre temps d'attente dans les restaurants." />
-  <link rel="icon" type="image/svg" href="images/logo/favicon.svg" />
-  <link rel="stylesheet" href="ohmyfood.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
-</head>
-<body>
-<!-- Header -->
-<header class="header-area grid">
-    <a class="logo flex" href="index.html"><img src="images/logo/ohmyfood@2x.svg"
-        alt="logo de la chaine de restauration ohmyfood" /></a>
-    <section class="location flex">
+    <meta
+      name="description"
+      content="Le concept Ohmyfood! : ne perdez plus de temps à consulter la carte. Composez votre propre menu et réduisez votre temps d'attente dans les restaurants."
+    />
+    <link rel="icon" type="image/svg" href="images/logo/favicon.svg" />
+    <link rel="stylesheet" href="ohmyfood.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header-area grid">
+      <a class="logo flex" href="index.html"
+        ><img
+          src="images/logo/ohmyfood@2x.svg"
+          alt="logo de la chaine de restauration ohmyfood"
+      /></a>
+      <section class="location flex">
         <i class="fas fa-map-marker-alt"></i>
         <p>Paris, Belleville</p>
-    </section>
-</header>
-<!-- Information -->
-<section class="information grid">
-    <section class="presentation bg--grey-white">
-      <h1>Réservez le menu qui vous convient</h1>
-      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-      <a href="#restaurant">Explorer nos restaurants</a>
-    </section>
-    <!-- Fonctionnement -->
-    <aside class="process">
+      </section>
+    </header>
+    <!-- Information -->
+    <section class="information grid">
+      <section class="presentation bg--grey-white">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+        <a href="#restaurant">Explorer nos restaurants</a>
+      </section>
+      <!-- Fonctionnement -->
+      <aside class="process">
         <h2>Fonctionnement</h2>
         <ol class="grid">
           <li>
-            <i class="fas fa-mobile-alt grey-color"></i>Choisissez un
-            restaurant
+            <i class="fas fa-mobile-alt grey-color"></i>Choisissez un restaurant
           </li>
           <li><i class="fas fa-list-ul grey-color"></i>Composez votre menu</li>
           <li>
@@ -43,5 +52,71 @@
         </ol>
       </aside>
     </section>
-</body>
+    <!-- Restaurants -->
+    <section class="restaurant grid bg--grey-white" id="restaurant">
+      <h2>Restaurants</h2>
+      <a href="la_palette_du_gout.html" class="resto-card bg--white">
+        <p class="resto-card-new">Nouveau</p>
+        <figure class="m0">
+          <img
+            src="images/restaurants/la_palette_du_gout.jpg"
+            alt="mise en avant d'un plat du restaurant la palette du goût"
+          />
+          <figcaption>
+            <h3>La palette du goût</h3>
+          </figcaption>
+          <div class="resto-card-description flex">
+            <p>Ménilmontant</p>
+            <i class="heart-heart fas fa-heart"></i>
+          </div>
+        </figure>
+      </a>
+      <a href="la_note_enchantee.html" class="resto-card bg--white">
+        <p class="resto-card-new">Nouveau</p>
+        <figure class="m0">
+          <img
+            src="images/restaurants/la_note_enchantee.jpg"
+            alt="mise en avant d'un plat du restaurant la note enchantée"
+          />
+          <figcaption>
+            <h3>La note enchantée</h3>
+          </figcaption>
+          <div class="resto-card-description flex">
+            <p>Charonne</p>
+            <i class="heart-heart fas fa-heart"></i>
+          </div>
+        </figure>
+      </a>
+      <a href="a_la_francaise.html" class="resto-card bg--white">
+        <figure class="m0">
+          <img
+            src="images/restaurants/a_la_francaise.jpg"
+            alt="mise en avant d'un plat du restaurant à la française"
+          />
+          <figcaption>
+            <h3>À la française</h3>
+          </figcaption>
+          <div class="resto-card-description flex">
+            <p>Cité Rouge</p>
+            <i class="heart-heart fas fa-heart"></i>
+          </div>
+        </figure>
+      </a>
+      <a href="le_delice_des_sens.html" class="resto-card bg--white">
+        <figure class="m0">
+          <img
+            src="images/restaurants/le_delice_des_sens.jpg"
+            alt="mise en avant d'un plat du restaurant le délice des sens"
+          />
+          <figcaption>
+            <h3>Le délice des sens</h3>
+          </figcaption>
+          <div class="resto-card-description flex">
+            <p>Folie-Méricourt</p>
+            <i class="heart-heart fas fa-heart"></i>
+          </div>
+        </figure>
+      </a>
+    </section>
+  </body>
 </html>
