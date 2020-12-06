@@ -1,17 +1,177 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood! - Restaurant à la française</title>
-    <meta name="description"
-        content="Le concept Ohmyfood! : ne perdez plus de temps à consulter la carte. Composez votre propre menu et réduisez votre temps d'attente dans les restaurants." />
+    <meta
+      name="description"
+      content="Le concept Ohmyfood! : ne perdez plus de temps à consulter la carte. Composez votre propre menu et réduisez votre temps d'attente dans les restaurants."
+    />
     <link rel="icon" type="image/svg" href="images/logo/favicon.svg" />
-    <link rel="stylesheet" href="ohmyfood2.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="ohmyfood.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-area-resto flex">
+      <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+      <a class="logo-area-resto flex" href="index.html"
+        ><img
+          src="images/logo/ohmyfood@2x.svg"
+          alt="logo de la chaine de restauration ohmyfood"
+      /></a>
+    </header>
+    <!-- Image restaurant -->
+    <figure class="resto-img-header">
+      <img
+        src="images/restaurants/a_la_francaise.jpg"
+        alt="mise en avant d'un plat du restaurant à la française"
+      />
+    </figure>
+    <!-- Menu -->
+    <section class="menu bg--grey-white">
+      <div class="menu-resto flex">
+        <h2>À la française</h2>
+        <i class="heart-heart fas fa-heart"></i>
+      </div>
+      <!-- Entrées -->
+      <section class="menu-section grid">
+        <h3 class="menu-section-title">entrées</h3>
+        <a class="menu-card menu-card-load menu-card-delay-one flex" href="#">
+          <div class="menu-info">
+            <h3>Millefeuille croustillant</h3>
+            <p>Myrtilles et pâte d'amande</p>
+          </div>
+          <div class="menu-info-price flex">
+            <p class="price">23€</p>
+          </div>
+          <div class="menu-info-verif">
+            <i class="menu-info-verif-ok fas fa-check-circle"></i>
+          </div>
+        </a>
+        <a class="menu-card menu-card-load menu-card-delay-two flex" href="#">
+          <div class="menu-info">
+            <h3>Millefeuille croustillant</h3>
+            <p>Myrtilles et pâte d'amande</p>
+          </div>
+          <div class="menu-info-price flex">
+            <p class="price">23€</p>
+          </div>
+          <div class="menu-info-verif">
+            <i class="menu-info-verif-ok fas fa-check-circle"></i>
+          </div>
+        </a>
+        <a class="menu-card menu-card-load menu-card-delay-three flex" href="#">
+          <div class="menu-info">
+            <h3>Millefeuille croustillant</h3>
+            <p>Myrtilles et pâte d'amande</p>
+          </div>
+          <div class="menu-info-price flex">
+            <p class="price">23€</p>
+          </div>
+          <div class="menu-info-verif">
+            <i class="menu-info-verif-ok fas fa-check-circle"></i>
+          </div>
+        </a>
+      </section>
+      <!-- Plats -->
+      <section class="menu-section grid">
+        <h3 class="menu-section-title">plats</h3>
+        <a class="menu-card menu-card-load menu-card-delay-one flex" href="#">
+          <div class="menu-info">
+            <h3>Millefeuille croustillant</h3>
+            <p>Myrtilles et pâte d'amande</p>
+          </div>
+          <div class="menu-info-price flex">
+            <p class="price">23€</p>
+          </div>
+          <div class="menu-info-verif">
+            <i class="menu-info-verif-ok fas fa-check-circle"></i>
+          </div>
+        </a>
+        <a class="menu-card menu-card-load menu-card-delay-two flex" href="#">
+          <div class="menu-info">
+            <h3>Millefeuille croustillant</h3>
+            <p>Myrtilles et pâte d'amande</p>
+          </div>
+          <div class="menu-info-price flex">
+            <p class="price">23€</p>
+          </div>
+          <div class="menu-info-verif">
+            <i class="menu-info-verif-ok fas fa-check-circle"></i>
+          </div>
+        </a>
+        <a class="menu-card menu-card-load menu-card-delay-three flex" href="#">
+          <div class="menu-info">
+            <h3>Millefeuille croustillant</h3>
+            <p>Myrtilles et pâte d'amande</p>
+          </div>
+          <div class="menu-info-price flex">
+            <p class="price">23€</p>
+          </div>
+          <div class="menu-info-verif">
+            <i class="menu-info-verif-ok fas fa-check-circle"></i>
+          </div>
+        </a>
+      </section>
+      <!-- Desserts -->
+      <section class="menu-section grid">
+        <h3 class="menu-section-title">desserts</h3>
+        <a class="menu-card menu-card-load menu-card-delay-one flex" href="#">
+          <div class="menu-info">
+            <h3>Millefeuille croustillant</h3>
+            <p>Myrtilles et pâte d'amande</p>
+          </div>
+          <div class="menu-info-price flex">
+            <p class="price">23€</p>
+          </div>
+          <div class="menu-info-verif">
+            <i class="menu-info-verif-ok fas fa-check-circle"></i>
+          </div>
+        </a>
+        <a class="menu-card menu-card-load menu-card-delay-two flex" href="#">
+          <div class="menu-info">
+            <h3>Millefeuille croustillant</h3>
+            <p>Myrtilles et pâte d'amande</p>
+          </div>
+          <div class="menu-info-price flex">
+            <p class="price">23€</p>
+          </div>
+          <div class="menu-info-verif">
+            <i class="menu-info-verif-ok fas fa-check-circle"></i>
+          </div>
+        </a>
+        <a class="menu-card menu-card-load menu-card-delay-three flex" href="#">
+          <div class="menu-info">
+            <h3>Millefeuille croustillant</h3>
+            <p>Myrtilles et pâte d'amande</p>
+          </div>
+          <div class="menu-info-price flex">
+            <p class="price">23€</p>
+          </div>
+          <div class="menu-info-verif">
+            <i class="menu-info-verif-ok fas fa-check-circle"></i>
+          </div>
+        </a>
+      </section>
+      <a class="order grid" href="">Commander</a>
+    </section>
+    <!-- Footer -->
+    <footer class="grid bg--footer">
+        <a class="logo-footer" href="index.html">ohmyfood</a>
+        <a class="suggestion-footer" href="#">Proposer un restaurant</a>
+        <a class="partner-footer" href="#">Devenir partenaire</a>
+        <a href="#">Mentions légales</a>
+        <a
+          href="mailto:hello@ohmyfood.fr?subject=Demande%20d'informations&bcc=management@ohmyfood.fr&body=Bonjour,%0APourriez-vous%20me%20fournir%20de%20plus%20amples%20informations%20sur%20votre%20concept.%0ACordialement,"
+          >Contact</a
+        >
+      </footer>
+  </body>
 </html>
